@@ -15,7 +15,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: ./script.sh
+      - run: bash ./script.sh
       - name: trigger single Job
         uses: appleboy/jenkins-action@master
         with:
